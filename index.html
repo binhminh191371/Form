@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <body>
+      <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h3>Welcome Back!</h3>
+            </div>
+          </div>
+          <form class="login-form">
+            <div class="input-wrap">
+              <input
+                class="input_username"
+                type="text"
+                placeholder="Enter your user name"
+              />
+              <div class="input-icons">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p class="show_err-user"></p>
+            </div>
+
+            <div class="input-wrap">
+              <input
+                class="input_pwlogin"
+                type="password"
+                placeholder="Enter your password"
+              />
+              <div class="input-icons">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+              <p class="show_err-pwlogin"></p>
+            </div>
+
+            <button class="btn_signin">Sign in</button>
+            <p class="message">
+              Not registered? <a href="./singup.html">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </body>
+    <script src="./js/password.js"></script>
+    <script src="./js/username.js"></script>
+  </body>
+</html>

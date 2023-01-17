@@ -1,0 +1,161 @@
+:root {
+  --bg-white:#fff;
+  --light-gray:#f2f2f2;
+  --dark-gray:#b3b3b3;
+  --primary-green:#328f8a;
+  --secondary-green:#08ac4b;
+  --error-color:rgb(234, 85, 85);
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header {
+  background-color: var(--bg-white);
+  height: 45px;
+}
+header a img {
+  width: 134px;
+  margin-top: 4px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login {
+  margin-top: -31px;
+  margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-white);
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: var(--light-gray);
+  width: 100%;
+  border: 0;
+  margin-bottom: 0px;
+  padding: 15px 55px 15px 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background-color: var(--primary-green);
+  background-image: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: var(--bg-white);
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: var(--dark-gray);
+  font-size: 12px;
+}
+.form .message a {
+  color: var(--secondary-green);
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: var(--primary-green);
+  background-image: linear-gradient(45deg, var(--primary-green), var(--secondary-green));
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.input-wrap {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.input-icons {
+  position: absolute;
+  top: 25%;
+  right: 30px;
+}
+
+.input-icons i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.1);
+  transition: all 0.2 ease;
+  border-radius: 50%;
+  font-size: 10px;
+  position: absolute;
+}
+.input_confirmpassword.valid + .input-icons > .fa-xmark,
+.input_pwlogin.invalid + .input-icons > .fa-xmark,
+.input_phone.invalid + .input-icons > .fa-xmark,
+.input_email.invalid + .input-icons > .fa-xmark,
+.input_username.invalid + .input-icons > .fa-xmark,
+.input_password.invalid + .input-icons > .fa-xmark,
+.input_confirmpassword.invalid + .input-icons > .fa-check,
+.input_pwlogin.invalid + .input-icons > .fa-check,
+.input_phone.valid + .input-icons > .fa-check,
+.input_email.valid + .input-icons > .fa-check,
+.input_username.valid + .input-icons > .fa-check,
+.input_password.valid + .input-icons > .fa-check {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.fa-check {
+  background-color: var(--secondary-green);
+}
+
+.fa-xmark {
+  background-color: var(--error-color);
+}
+
+.input-wrap a {
+  margin: 0;
+}
+
+.btn_signin {
+  margin-top: 20px;
+}
+
+.show_err-pwlogin,
+.show_err-confirmpw,
+.show_err-phone,
+.show_err-email,
+.show_err-user,
+.show_err-pw {
+  text-align: left;
+  font-size: 10px;
+  color: var(--error-color);
+  padding-top: 5px;
+}
